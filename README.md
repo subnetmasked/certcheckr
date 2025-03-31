@@ -1,6 +1,6 @@
 # CertCheckr
 
-A simple certificate expiration monitoring tool that runs on Ubuntu servers. It checks when certificates are about to expire and sends notifications via webhook.
+A simple certificate expiration monitoring tool developed for Ishøj Municipality. It checks when certificates are about to expire and sends notifications via webhook.
 
 ## Features
 
@@ -9,12 +9,13 @@ A simple certificate expiration monitoring tool that runs on Ubuntu servers. It 
 - Configurable notification period
 - Runs as a system service
 - Starts automatically on system boot
+- Multi-language support (English/Danish)
 
 ## Installation
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/certcheckr.git
+git clone https://github.com/ishojadmin/certcheckr.git
 cd certcheckr
 ```
 
@@ -46,7 +47,17 @@ sudo systemctl start certcheckr@USERNAME
 ### Interactive Mode
 Run the program in interactive mode to manage certificates:
 ```bash
-certcheckr.py
+certcheckr
+```
+
+### Language Selection
+The program supports both English and Danish:
+```bash
+# Run in English (default)
+certcheckr
+
+# Run in Danish
+CERTCHECKR_LANG=da certcheckr
 ```
 
 ### Service Management
@@ -72,6 +83,10 @@ The program stores its configuration in `~/.certcheckr/config.json`. You can con
 - Number of days before expiry to send notifications
 - List of certificates to monitor
 
+## Development
+
+This software is developed and maintained by Ishøj Municipality's IT department for internal use.
+
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 (GPLv3) - see the LICENSE file for details.
