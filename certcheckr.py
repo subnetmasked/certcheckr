@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
 CertCheckr - Certificate Expiration Monitoring Tool
-Developed for Ishøj Municipality's IT department
-This tool monitors certificate expiration dates and sends notifications via webhook.
+A tool for monitoring certificate expiration dates and sending notifications via webhook.
 """
 
 import json

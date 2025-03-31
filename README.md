@@ -15,7 +15,7 @@ A simple certificate expiration monitoring tool developed for Ishøj Municipalit
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/ishojadmin/certcheckr.git
+git clone https://github.com/subnetmasked/certcheckr.git
 cd certcheckr
 ```
 
@@ -85,7 +85,7 @@ The program stores its configuration in `~/.certcheckr/config.json`. You can con
 
 ## Development
 
-This software is developed and maintained by Ishøj Municipality's IT department for internal use.
+This software is developed for internal use in a municipal IT environment. It provides certificate expiration monitoring and notification capabilities.
 
 ## License
 
