@@ -5,7 +5,8 @@ After=network.target
 [Service]
 Type=simple
 User=%i
-ExecStart=/usr/bin/python3 /usr/local/bin/certcheckr.py --daemon
+WorkingDirectory=/home/%i/certcheckr
+ExecStart=/usr/bin/python3 /home/%i/certcheckr/certcheckr.py --daemon
 Restart=always
 RestartSec=10
 

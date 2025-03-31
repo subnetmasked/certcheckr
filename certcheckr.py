@@ -34,10 +34,12 @@ class CertChecker:
         with open(CONFIG_FILE, 'r') as f:
             return json.load(f)
 
-    def save_config(self):
+    def save_config(self, config=None):
         """Save current configuration to file."""
+        if config is None:
+            config = self.config
         with open(CONFIG_FILE, 'w') as f:
-            json.dump(self.config, f, indent=4)
+            json.dump(config, f, indent=4)
 
     def add_certificate(self, name, expiry_date):
         """Add a new certificate to monitor."""
